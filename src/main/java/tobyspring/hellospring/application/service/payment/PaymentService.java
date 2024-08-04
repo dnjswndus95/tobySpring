@@ -1,6 +1,8 @@
-package tobyspring.hellospring.application.service;
+package tobyspring.hellospring.application.service.payment;
 
 import tobyspring.hellospring.application.domain.Payment;
+import tobyspring.hellospring.application.service.ex_rate.ExRateProvider;
+import tobyspring.hellospring.application.service.ex_rate.WebApiExRateProvider;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -8,7 +10,7 @@ import java.time.LocalDateTime;
 
 public class PaymentService {
 
-    private final WebApiExRateProvider exRateProvider;
+    private final ExRateProvider exRateProvider;
 
     public PaymentService() {
         this.exRateProvider = new WebApiExRateProvider();
@@ -16,7 +18,6 @@ public class PaymentService {
 
     // Payment 반환
     public Payment prepare(Long orderId, String currency, BigDecimal foreignCurrencyAmount) throws IOException {
-
         BigDecimal exRate = exRateProvider.getExRate(currency);
         BigDecimal convertedAmount = foreignCurrencyAmount.multiply(exRate);
         LocalDateTime validUntil = LocalDateTime.now().plusMinutes(30);
