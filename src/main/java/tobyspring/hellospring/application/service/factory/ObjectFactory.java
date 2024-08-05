@@ -4,6 +4,10 @@ import tobyspring.hellospring.application.service.ex_rate.ExRateProvider;
 import tobyspring.hellospring.application.service.ex_rate.WebApiExRateProvider;
 import tobyspring.hellospring.application.service.payment.PaymentService;
 
+/**
+ * Java의 Bean Factory 역할
+ */
+
 public class ObjectFactory {
     public PaymentService paymentService() {
         return new PaymentService(this.exRateProvider());
