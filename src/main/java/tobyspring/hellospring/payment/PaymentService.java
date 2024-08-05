@@ -1,8 +1,6 @@
-package tobyspring.hellospring.application.service.payment;
+package tobyspring.hellospring.payment;
 
 import org.springframework.stereotype.Component;
-import tobyspring.hellospring.application.domain.Payment;
-import tobyspring.hellospring.application.service.ex_rate.ExRateProvider;
 
 import java.io.IOException;
 import java.math.BigDecimal;

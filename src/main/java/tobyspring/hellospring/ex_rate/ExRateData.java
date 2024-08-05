@@ -1,4 +1,4 @@
-package tobyspring.hellospring.application.domain;
+package tobyspring.hellospring.ex_rate;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

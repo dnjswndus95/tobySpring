@@ -1,4 +1,4 @@
-package tobyspring.hellospring.application.service.utils;
+package tobyspring.hellospring.utils;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,8 +1,8 @@
-package tobyspring.hellospring.application.service.ex_rate;
+package tobyspring.hellospring.ex_rate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
-import tobyspring.hellospring.application.domain.ExRateData;
+import tobyspring.hellospring.payment.ExRateProvider;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * 기존 코드를 수정하지 않고 데코레이터 패턴으로 요구사항을 만족시킨다.
  */
 @Component
-public class WebApiExRateProvider implements ExRateProvider{
+public class WebApiExRateProvider implements ExRateProvider {
 
     @Override
     public BigDecimal getExRate(String currency) throws IOException {

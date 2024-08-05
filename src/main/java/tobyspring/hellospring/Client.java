@@ -2,9 +2,8 @@ package tobyspring.hellospring;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import tobyspring.hellospring.application.domain.Payment;
-import tobyspring.hellospring.application.service.ObjectFactory;
-import tobyspring.hellospring.application.service.payment.PaymentService;
+import tobyspring.hellospring.payment.Payment;
+import tobyspring.hellospring.payment.PaymentService;
 
 import java.io.IOException;
 import java.math.BigDecimal;

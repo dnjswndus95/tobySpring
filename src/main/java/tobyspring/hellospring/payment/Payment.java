@@ -1,4 +1,4 @@
-package tobyspring.hellospring.application.domain;
+package tobyspring.hellospring.payment;
 
 import lombok.Getter;
 

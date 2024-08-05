@@ -1,13 +1,11 @@
-package tobyspring.hellospring.application.service;
+package tobyspring.hellospring;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import tobyspring.hellospring.application.service.ex_rate.CachedExRateProvider;
-import tobyspring.hellospring.application.service.ex_rate.ExRateProvider;
-import tobyspring.hellospring.application.service.ex_rate.SimpleExRateProvider;
-import tobyspring.hellospring.application.service.ex_rate.WebApiExRateProvider;
-import tobyspring.hellospring.application.service.payment.PaymentService;
+import tobyspring.hellospring.ex_rate.CachedExRateProvider;
+import tobyspring.hellospring.payment.ExRateProvider;
+import tobyspring.hellospring.ex_rate.WebApiExRateProvider;
+import tobyspring.hellospring.payment.PaymentService;
 
 
 @Configuration
