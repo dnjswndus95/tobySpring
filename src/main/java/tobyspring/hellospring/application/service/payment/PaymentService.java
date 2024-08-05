@@ -12,8 +12,8 @@ public class PaymentService {
 
     private final ExRateProvider exRateProvider;
 
-    public PaymentService() {
-        this.exRateProvider = new WebApiExRateProvider();
+    public PaymentService(ExRateProvider exRateProvider) {
+        this.exRateProvider = exRateProvider;
     }
 
     // Payment 반환
